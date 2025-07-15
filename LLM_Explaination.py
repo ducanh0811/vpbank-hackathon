@@ -96,6 +96,16 @@ def explain_credit_score(model_path, input_data):
     top_features = get_top_features(df, shap_values, pred_index=pred_index)
 
     save_shap_values(shap_values, "shap_outputs/shap_values.json")
+    customer_id = input_data.get("customer_id", "unknown")
+    with open(f"{"outputs/structured_data"}/{customer_id}.json", "w", encoding="utf-8") as f:
+        json.dump({
+            "customer_id": customer_id,
+            "prediction": prediction,
+            "top_features": top_features,
+            "explanation": explanation
+        }, f, indent=2, ensure_ascii=False)
+
+        
     prompt = generate_prompt(prediction, top_features)
     explanation = ask_ollama(prompt)
 
