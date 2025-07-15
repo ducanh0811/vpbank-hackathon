@@ -1,5 +1,5 @@
 import json
-from main import explain_credit_score  # sửa theo tên file thật của bạn
+from LLM_Explaination import explain_credit_score  # sửa theo tên file thật của bạn
 
 def save_explanation_to_json(model_path: str, input_path: str, output_path: str):
     # Load input data từ file

@@ -1,0 +1,23 @@
+{
+    "customer_id": "CUS_0xd40",
+    "age": 28,
+    "annual_income": 34847.84,
+    "monthly_inhand_salary": 3037.986667,
+    "num_bank_accounts": 2,
+    "num_credit_card": 4,
+    "interest_rate": 6,
+    "num_of_loan": 1,
+    "delay_from_due_date": 3,
+    "num_of_delayed_payment": 4,
+    "changed_credit_limit": 5.42,
+    "num_credit_inquiries": 2,
+    "credit_mix": "Good",
+    "outstanding_debt": 605.03,
+    "credit_utilization_ratio": 24.46,
+    "payment_behaviour": "Low_spent_Small_value_payments",
+    "monthly_balance": 470.69,
+    "credit_score_numeric": 1,
+    "salary_range": "Medium",
+    "credit_history_year": 26,
+    "credit_history_month": 7
+}
